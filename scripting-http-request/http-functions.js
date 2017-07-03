@@ -1,11 +1,8 @@
 var https = require('https');
 
-module.exports = function getHTML (options){
+module.exports = function getHTML (options, callback){
 var bufferedData = "";
 
-function printHTML (html) {
-  console.log(html);
-}
 
 https.get(options, function (response) {
 
@@ -16,7 +13,7 @@ https.get(options, function (response) {
   });
 
   response.on('end', function() {
-    printHTML(bufferedData);
+    callback(bufferedData);
   });
 
 });
