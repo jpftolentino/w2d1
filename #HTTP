@@ -1,0 +1,48 @@
+#HTTP
+
+* Hypertext Transfer Protocol
+
+#Browser
+
+What happens when we type in `google.com` and hit enter ?
+
+## IP
+
+*Internet Protocol
+
+`###.###.###.###` is an IP Address
+
+e.g. `192.168.0.1` - Allows internet traffic to get routed to our machines
+
+## DNS
+
+*Domain Name Service
+
+Translates common names into IP Addresses (like googe.com`) into an IP address (`172.217.9.238`)
+
+### HOSTS
+
+##Ports
+
+Like an individual mailbox at a given address, there are lots of these ~65000
+
+Common Ports:
+
+80/443: HTTP/HTTPS25: SMTP (Mail)
+8080: HTTP Alternative
+20: FTP
+5222: XMPP
+
+### Servers
+
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+
+GET - READ
+POST - CREATE
+
+get and post are the only two the browser will perform
+
+put/patch - update resource path
+delete - remove content/resource
