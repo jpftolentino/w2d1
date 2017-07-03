@@ -29,7 +29,7 @@ https.get(requestOptions, function (response) {
 var requestOptions = {
   host: 'sytantris.github.io',
   path: '/http-examples/step2.html'
-}
+};
 
 
 getAndPrintHTML(requestOptions);
